@@ -11,7 +11,7 @@
 #
 # Joseph B. Zambon
 #  jbzambon@ncsu.edu
-#  31 March 2021
+#  28 March 2022
 
 
 # In[17]:
@@ -114,7 +114,7 @@ print('uint64_pi consumes ' + str(sys.getsizeof(uint64_pi)) + ' bytes ' +       
 # Extend beyond allowable range of int8
 
 int8_extended = numpy.int8(math.pi * 10**2) #(-128 to 127)
-print(int8_extended)
+print(int8_extended + 256)
 print('int8_pi   consumes ' + str(sys.getsizeof(int8_extended)) + ' bytes ' +       'and represents pi as: ' + str((int8_extended + 256) / 10**2))
 
 
